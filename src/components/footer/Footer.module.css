@@ -1,0 +1,30 @@
+.footer-container {
+    background: #1D1D1E;
+    color: #ffffff;
+}
+
+li a {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0px;
+
+}
+
+ul {
+    margin: 0px;
+    padding: 0;
+    margin-bottom: 0.5;
+}
+
+footer {
+    padding: 20px 20px 0 20px;
+}
+
+
+
+
+
+
+
+
