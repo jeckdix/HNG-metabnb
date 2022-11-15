@@ -1,46 +1,80 @@
-import React from "react";
-import classes from "./NavBar.module.css";
-import { HiMenu } from "react-icons/hi";
-import logo from "../../Assets/logo.png";
+import React, {useState} from 'react';
+import assets from '../../utils/assets';
+import './NavBar.css';
+import { Modal } from '../Modal';
+import { Link } from 'react-router-dom';
+import  { FaBars } from 'react-icons/fa';
 
-const handleMenuClick = () => {
-  console.log("menu was clicked");
-};
-export const NavBar = () => {
+const NavBar = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleOpen = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  // const classNames = [classes.navBar, 'has-content-margin'].join(' ');
   return (
-    <nav>
-        <div className={classes['mobile-menu']}>
-          <div>
-            <img className={classes.logo} src={logo} alt="logo" />
-          </div>
+    <>
 
-          <div className={classes["action-button"]}>
-            <HiMenu size="20" onClick={handleMenuClick} />
-            {/* <button className={classes["connect-button"]}>Connect wallet</button> */}
-          </div>
-        </div>
-
-        {/* <ul>
-          <li> Home</li>
-          <li>Place to stay</li>
-          <li> NFTs</li>
-          <li>Community</li>
-        </ul> */}
-
-      {/* Desktop Navigation Bar  */}
-      <div className={classes["desktop-view"]}>
-        <div>
-          <div>Logo</div>
-          <h2>Metabnb</h2>
-        </div>
-        <ul>
-          <li> Home</li>
-          <li>Place to stay</li>
-          <li> NFTs</li>
-          <li>Community</li>
-        </ul>
-        <div> Connect to wallet</div>
+<nav className="navBar has-content-margin desktop-nav">
+      <img className='logo' src={assets.logo} alt="logo" />
+      <ul className='navList'>
+        <li>
+        <Link to='/'>Home</Link>
+          {/* <a href="#test">Home</a> */}
+        </li>
+        <li>
+        <Link to='/place-to-stay'>Place to stay</Link>
+          {/* <a href="#test">Place to stay</a> */}
+        </li>
+        <li>
+          <a href="#test">NFTs</a>
+        </li>
+        <li>
+          <a href="#test">Community</a>
+        </li>
+      </ul>
+      <div>
+      <button onClick={openModal}> Connect wallet</button>
+        {showModal ? <Modal setShowModal={setShowModal} /> : null}
       </div>
     </nav>
+
+    <nav className="navBar has-content-margin mobile-nav">
+        <img className="logo" src={assets.logo} alt="logo" />
+        <div>
+          <FaBars onClick={toggleOpen} />          
+          </div>
+      </nav>
+    <div className="mobile-menu" style={{display: `${!isMenuOpen ? 'none': 'flex'}`}}>
+        <ul className="navList">
+            <li>
+              <a href="#test">Home</a>
+            </li>
+            <li>
+              <a href="#test">Place to stay</a>
+            </li>
+            <li>
+              <a href="#test">NFTs</a>
+            </li>
+            <li>
+              <a href="#test">Community</a>
+            </li>
+            <li>
+              <button onClick={openModal}>Connect wallet</button>
+              {showModal ? <Modal setShowModal={setShowModal} /> : null}
+            </li>
+          </ul>
+  
+      </div>
+
+
+    </>
   );
 };
+
+export default NavBar;

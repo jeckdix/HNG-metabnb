@@ -1,0 +1,201 @@
+.jumbotron h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #434343;
+  max-width: 635px;
+  text-align: justify;
+}
+.jumbotron h1 span {
+  color: #a02279;
+}
+.jumbotron p {
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: -0.02em;
+  color: #434343;
+  max-width: 635px;
+  margin:  48px 0 48px 0;
+}
+.search input, .search button{
+  height: 54px;
+}
+.search input {
+  background: rgba(247, 247, 247, 0.1);
+  border: 1px solid #A3A3A3;
+  border-radius: 8px 0px 0px 8px;
+  padding: 1.25em 0 1.25em 1em;
+  width: 390px;
+}
+
+.search button {
+  width: 230px;
+  padding: 1em 5.5em 1em 5.5em;
+  color: #fff;
+  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%);
+  border-radius: 0px 8px 8px 0px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width :480px) {
+  .jumbotron{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+  }
+  .jumbotron img {
+    width: 80vw;
+    margin-top: 30px;
+  }
+  .jumbotron h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #434343;
+    text-align: left;
+    margin-top: 15px;
+  }
+  .jumbotron h1 span {
+    color: #a02279;
+  }
+  .jumbotron p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #434343;
+    margin:  48px 0 48px 0;
+  }
+  .search input, .search button{
+    height: 41px;
+  }
+  .search input {
+    background: rgba(247, 247, 247, 0.1);
+    border: 1px solid #A3A3A3;
+    border-radius: 8px 0px 0px 8px;
+    padding: 1.25em 0 1.25em 1em;
+    width: 50vw;
+  }
+
+  .search button {
+    width: 20vw;
+    padding: 1em 5.5em 1em 5.5em;
+    color: #fff;
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%);
+    border-radius: 0px 8px 8px 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+
+
+@media screen and (min-width: 481px) and (max-width:1023px) {
+  .jumbotron {
+    display: flex;
+    flex-direction: row;
+   align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 70px;
+    gap: 70px;
+  }
+  .jumbotron h1 {
+    font-size: 2em;
+    
+  }
+  .jumbotron img {
+    width: 300px;
+  }
+  .jumbotron p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #434343;
+    max-width: 635px;
+    margin:  48px 0 48px 0;
+  }
+  .search input, .search button{
+    height: 41px;
+  }
+  .search input {
+    background: rgba(247, 247, 247, 0.1);
+    border: 1px solid #A3A3A3;
+    border-radius: 8px 0px 0px 8px;
+    padding: 1.25em 0 1.25em 1em;
+    width: 30vw;
+  }
+
+  .search button {
+    width: 10vw;
+    padding: 1em 5.5em 1em 5.5em;
+    color: #fff;
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%);
+    border-radius: 0px 8px 8px 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}
+ 
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .jumbotron h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #434343;
+    max-width: 635px;
+    text-align: justify;
+  }
+  .jumbotron h1 span {
+    color: #a02279;
+  }
+
+  .jumbotron p {
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+    color: #434343;
+    max-width: 635px;
+    margin:  48px 0 48px 0;
+  }
+
+  .search input, .search button{
+    height: 54px;
+  }
+  .search input {
+    background: rgba(247, 247, 247, 0.1);
+    border: 1px solid #A3A3A3;
+    border-radius: 8px 0px 0px 8px;
+    padding: 1.25em 0 1.25em 1em;
+    width: 390px;
+  }
+
+  .search button {
+    width: 230px;
+    padding: 1em 5.5em 1em 5.5em;
+    color: #fff;
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%);
+    border-radius: 0px 8px 8px 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .jumbotron .image {
+    min-width: 480px;
+  }
+  .jumbotron {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
