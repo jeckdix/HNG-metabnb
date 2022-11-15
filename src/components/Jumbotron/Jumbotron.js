@@ -21,7 +21,7 @@ const Jumbotron = () => {
         </div>
       </div>
       <div className="image">
-        <img src={assets.frontPageImg} alt="front page" />
+        <img className='' src={assets.frontPageImg} alt="front page" />
       </div>
     </div>
   )
