@@ -22,6 +22,9 @@
   .wrapper div{
     flex: 50%
   }
+  .inspiration h1 {
+    font-size: 30px;
+  }
 }
 
 
