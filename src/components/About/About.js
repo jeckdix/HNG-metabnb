@@ -7,8 +7,8 @@ const About = () => {
 
   const classNames = [classes["about-container"],].join(" ")
   return (
-    <div className={classNames}>
-      <div className={classes.leftSide}>
+    <div className={classNames} style={{background: "linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%)"}} >
+      <div className={classes.leftSide} style={{color: "#ffffff"}}>
         <h1>Metabnb NFTs</h1>
         <p className={classes.aboutText}>
           Discover our NFT gift cards collection. Loyal customers gets amazing gift cards which
