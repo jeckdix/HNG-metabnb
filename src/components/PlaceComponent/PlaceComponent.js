@@ -1,9 +1,9 @@
 import React from 'react';
 import Card from '../Card/Card';
 import allImages from '../../utils/assets';
-
+import classes from './PlaceComponent.module.css'
 const PlaceComponent = () => {
-  const classNames = ["classes.place", 'has-content-margin'].join(' ');
+  const classNames = [classes.place, 'has-content-margin'].join(' ');
   return (
     <div className={classNames}>
       {allImages.PlaceToStayImgs.map((src, index) => <Card key={index} src={src} alt="alt text" />)}

@@ -4,7 +4,7 @@ import { MdOutlineArrowDropDown } from 'react-icons/md';
 
 const Location = () => {
   return (
-    <>
+    <div className='location-container'>
       <div>
         <button className="mobile-tablet-drop">Locations <span><MdOutlineArrowDropDown /></span></button>
       </div>
@@ -22,7 +22,7 @@ const Location = () => {
         </ul>
         <input type="text" placeholder="Location" />
       </div>
-    </>
+    </div>
   );
 };
 

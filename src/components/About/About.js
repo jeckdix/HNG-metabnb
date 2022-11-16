@@ -4,8 +4,10 @@ import classes from './About.module.css'
 
 
 const About = () => {
+
+  const classNames = [classes["about-container"],].join(" ")
   return (
-    <div className={classes["about-container"]}>
+    <div className={classNames}>
       <div className={classes.leftSide}>
         <h1>Metabnb NFTs</h1>
         <p className={classes.aboutText}>
