@@ -73,7 +73,7 @@ nav button {
 
  */
 
-@media screen and (min-width: 1024px) {
+ @media screen and (min-width: 1024px) {
   .navBar {
     display: flex;
     flex-direction: row;
@@ -126,9 +126,10 @@ nav button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     font-family: 'Red Rose';
     font-weight: 400;
+
   }
 
   .mobile-menu {
@@ -138,6 +139,7 @@ nav button {
 
   .navBar .logo {
     margin-top: 1.5em;
+    width: 150px
   }
 
   nav button {
@@ -184,16 +186,19 @@ nav button {
     align-items: baseline;
     font-family: 'Red Rose';
     font-weight: 400;
+
   }
 
   .mobile-menu {
     display: flex;
     width: 100%;
     justify-content: center;
+    padding: 20px;
   }
 
   .navBar .logo {
-    margin-top: 1.5em;
+    margin-top: 0.5em;
+    width: 120px;
   }
 
   nav button {
@@ -215,7 +220,8 @@ nav button {
     line-height: 1.5em;
   }
   li {
-    text-decoration: none;
+    
+    margin-bottom: 10px;
   }
 
   li button {

@@ -6,11 +6,12 @@ import PlaceToStay from "./pages/PlaceToStay";
 
 const App = () => {
   return (
+
     <PageWrapper>
-      <Routes>
+        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/place-to-stay" element={<PlaceToStay />} />
-      </Routes>
+        </Routes>
     </PageWrapper>
   );
 };

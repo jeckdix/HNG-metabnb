@@ -53,10 +53,12 @@ const NavBar = () => {
     <div className="mobile-menu" style={{display: `${!isMenuOpen ? 'none': 'flex'}`}}>
         <ul className="navList">
             <li>
-              <a href="#test">Home</a>
+            <Link to='/'>Home</Link>
+              {/* <a href="/">Home</a> */}
             </li>
             <li>
-              <a href="#test">Place to stay</a>
+            <Link to='/place-to-stay'>Place to stay</Link>
+              {/* <a href="#test">Place to stay</a> */}
             </li>
             <li>
               <a href="#test">NFTs</a>

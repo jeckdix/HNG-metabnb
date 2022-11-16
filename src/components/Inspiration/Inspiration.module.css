@@ -1,28 +1,34 @@
-h1 {
-  text-align: center;
+.inspiration h1 {
+ font-size: 20px;
+margin-bottom: 20px;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1920px) {
-  h1 {
-    font-family: 'Red Rose';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 60px;
-    margin: 50px 0;
+.inspiration {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 5px;
+}
+@media screen and (min-width: 768px) {
+  .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .wrapper div{
+    flex: 50%
   }
 }
 
 
-.inspiration {
-  text-align: center;
-}
 
 
-@media screen and (max-width: 1203px) {
-  h1 {
+
+/* @media screen and (max-width: 1203px) {
+  .inspiration h1 {
     font-size: 20px;
-    
   }
   .inspiration {
     display: flex;
@@ -32,17 +38,11 @@ h1 {
     gap: 40px;
   }
 
-  .flex-img-container{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .flex-img-container div {
-    flex: 50%;
-  }
+
 }
 
 @media screen and (max-width: 768px) {
-  h1 {
+  .inspiration h1 {
     font-size: 1.5em;
     
   }
@@ -53,4 +53,4 @@ h1 {
     text-align: center;
     gap: 20px;
   }
-}
+} */

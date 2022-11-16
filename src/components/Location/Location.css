@@ -1,0 +1,73 @@
+ 
+.flex-container ul li {
+    text-decoration: underline;
+    color: #434343;
+}
+
+.flex-container ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.flex-container input {
+background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+border: 1px solid #B4B4B4;
+border-radius: 8px;
+height: 40px;
+}
+
+.mobile-tablet-drop {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-family: 'Red Rose', cursive;
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    border: none;
+    color: #fff;
+    display: none;
+    margin-left: 20px;
+    align-items: center;
+    
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .flex-container {
+        display: none;
+    }
+    .mobile-tablet-drop {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .flex-container {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 20px;
+
+    }
+    .mobile-tablet-drop {
+        display: none;
+    }
+    .flex-container ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        font-size: 14px;
+    }
+}

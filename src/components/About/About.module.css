@@ -3,6 +3,87 @@
   color: #fff;
 }
 
+.learn-more {
+  color: #a02279;
+  cursor: pointer;
+  text-decoration: none;
+  height: 48px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 48px;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  width: 156px;
+  max-width: 156px;
+}
+
+
+@media  screen and (max-width: 480px) {
+  .rightSide img {
+    width: 60vw;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column-reverse ;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    gap:20px
+}
+
+.about-container h1 {
+  margin-bottom: 20px;
+}
+
+.learn-more {
+  padding: 0.5em;
+}
+
+.aboutText {
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+}
+
+
+/* Tablet  */
+@media  screen and (min-wdith: 481px){
+  .rightSide img {
+    width: 40vw;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column-reverse ;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+.learn-more {
+  color: #a02279;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0.5em;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 48px;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+
+}
+.about-container h1 {
+  font-size: 1.5em;
+  text-align: left;
+  margin: 10px 0px;
+}
+.aboutText {
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+}
+
+
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
   .about-container {
     display: flex;
@@ -50,46 +131,24 @@
     max-width: 156px;
   }
 }
-/* Tablet  */
-@media  screen and (max-width: 768px) {
+
+
+
+@media  screen and (min-width: 768px) and (max-width: 1203px) {
   .rightSide img {
-    display: none;
+    width: 30vw;
+  }
+  .leftSide {
+    align-items: left;
+    width: 200px;
   }
   .about-container {
     display: flex;
-    flex-direction: column-reverse ;
+    flex-direction: row ;
     align-items: center;
     justify-content: center;
     padding: 1em;
 }
-.learn-more {
-  color: #a02279;
-  cursor: pointer;
-  text-decoration: none;
-  padding: 0.5em;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 48px;
-  text-align: center;
-  background: #fff;
-  border-radius: 8px;
-
-}
-.about-container h1 {
-  font-size: 1.5em;
-  text-align: left;
-  margin: 10px 0px;
-}
-.aboutText {
-  line-height: 20px;
-  margin-bottom: 20px;
-}
-}
-
-@media  screen and (min-width: 768px) and (max-width: 1203px) {
-  .rightSide img {
-    display: none;
-  }
   .learn-more {
     color: #a02279;
     cursor: pointer;

@@ -15,15 +15,17 @@ h1, h2, h3, p,body {
 }
 
 
+
 @media screen and (min-width: 1024px) {
   .has-content-margin {
-    margin: 45px 100px;
+    margin: 35px 7%;
   }
 
   .mobile-nav {
     display: none !important;
   }
 }
+
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
